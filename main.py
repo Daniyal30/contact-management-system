@@ -16,7 +16,7 @@ def displayMenu():
 
 def validatePhone(phone):
     "Validate a phone number"
-    pattern = r'^\+?\d{10,15}$'
+    pattern = r'^\+?\d{9,10}$'
     return re.match(pattern, phone.strip()) is not None
 
 
